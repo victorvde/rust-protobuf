@@ -1,7 +1,7 @@
 rust-protobuf
 =============
 
-[![Build Status](https://travis-ci.org/stepancheg/rust-protobuf.png)](https://travis-ci.org/stepancheg/rust-protobuf)
+[![Build Status](https://travis-ci.org/stepancheg/rust-protobuf.png)](https://travis-ci.org/stepancheg/rust-protobuf.png?branch=rust-0.9)
 
 [Protobuf](https://developers.google.com/protocol-buffers/docs/overview) implementation in [Rust](http://www.rust-lang.org/).
 
