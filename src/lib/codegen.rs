@@ -95,7 +95,7 @@ fn field_type_name(field: &FieldDescriptorProto, pkg: &str) -> ~str {
         if field.get_type_name().starts_with(current_pkg_prefix) {
             remove_prefix(field.get_type_name(), current_pkg_prefix).to_owned()
         } else {
-            remove_to(field.get_type_name(), '.').to_owned()
+            remove_prefix(field.get_type_name(), ".").to_owned()
         }
     } else if field.has_field_type() {
         rust_name(field.get_field_type()).to_owned()
