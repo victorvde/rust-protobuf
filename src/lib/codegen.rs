@@ -993,7 +993,7 @@ pub fn gen(files: &[FileDescriptorProto], _: &GenOptions) -> ~[GenResult] {
             w.write_line("use protobuf::rt;");
             w.write_line("use protobuf::descriptor;");
             for dep in file.get_dependency().iter() {
-                w.write_line(format!("use {:s}::*;", proto_path_to_rust_base(*dep)));
+                w.write_line(format!("use super::{:s}::*;", proto_path_to_rust_base(*dep)));
             }
 
             {
